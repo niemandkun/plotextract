@@ -1,6 +1,6 @@
 # plotextract
 
-Extract digital series data from raster image
+Extract plots from raster images
 
 ## Description
 
