@@ -55,7 +55,7 @@ def get_grid_mask(saturation_image, volume_image):
 
 
 def clusterize_hue(hue_image, threshold):
-    samples = hue_image[::25].flatten()
+    samples = hue_image[::10,::10].flatten()
     db = DBSCAN(eps=threshold).fit(samples.reshape(-1, 1))
     return calculate_means_of_clusters(samples, db.labels_)
 
