@@ -18,6 +18,16 @@ as output it returns a `.csv` file with coordinates of points from each series,
 represented on input image.
 
 
+## Details
+
+The script uses DBSCAN clustering to detect colors and total
+amount of plots on image. Then using Tesseract OCR to recognize dash labels
+on the figure axes it transforms detected plots into a right coordinate
+system. Final step is to find pixels corresponding to each plot and to fit
+approximating curves between those pixels.
+Active contour models are used after fitting for better approximation.
+
+
 ## Installation
 
 ```
