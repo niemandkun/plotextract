@@ -21,7 +21,7 @@ represented on input image.
 ## Installation
 
 ```
-$ git clone http://github.com/niemandkun/plotextract
+$ git clone https://github.com/niemandkun/plotextract.git
 $ cd plotextract
 $ python2 setup.py sdist
 $ pip install dist/plotextract-0.0.tar.gz
